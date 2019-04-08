@@ -1,0 +1,67 @@
+.R--application {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.R--application_header {
+  display: flex;
+  justify-content: center;
+
+  > .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: .5rem 1.5rem;
+
+    > .logo {}
+    > .btn {}
+  }
+}
+
+.R--application_nav {
+  display: flex;
+  justify-content: center;
+  background-color: $color-primary;
+  color: $color-secondary;
+
+  > .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1.5rem;
+  }
+}
+
+.R--application_menu {
+  display: flex;
+
+  > .item {
+    > .link {
+      display: block;
+      padding: 1rem;
+
+      &.-active {
+      }
+    }
+  }
+}
+
+.R--application_social {
+  > .list {
+    display: flex;
+
+    > .item {}
+  }
+}
+
+.R--application_main {
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}

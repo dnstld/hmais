@@ -1,1 +1,50 @@
-{{outlet}}
+<div class="R--application">
+  <header class="R--application_header">
+    <div class="wrapper">
+      <h1 class="logo">HMais</h1>
+      <button class="btn">Seja</button>
+    </div>
+  </header>
+
+  <nav class="R--application_nav">
+    <div class="wrapper">
+      <ul class="R--application_menu">
+        <li class="item">
+          {{#link-to "index" class="link" activeClass="-active"}}
+            Home
+          {{/link-to}}
+        </li>
+        <li class="item">
+          <a href="" class="link" activeClass="-active">Sobre</a>
+        </li>
+        <li class="item">
+          <a href="" class="link" activeClass="-active">Produtos</a>
+        </li>
+        <li class="item">
+          <a href="" class="link" activeClass="-active">Unidades</a>
+        </li>
+        <li class="item">
+          <a href="" class="link" activeClass="-active">Contato</a>
+        </li>
+      </ul>
+
+      <aside class="R--application_social">
+        <ul class="list">
+          <li class="item">
+            <a href="https://github.com/dnstld" target="_blank" rel="noopener" class="link" title="">
+              {{fa-icon "instagram"}}
+            </a>
+          </li>
+          <li class="item">
+            <a href="https://www.instagram.com/denistoledodev" target="_blank" rel="noopener" class="link" title="">
+              {{fa-icon "facebook"}}
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </nav>
+  <main class="R--application_main">
+    {{outlet}}
+  </main>
+</div>
